@@ -1,1 +1,1 @@
-Built with django_builder
+# E-commerce app
