@@ -9,6 +9,5 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN rm /usr/bin/mysql*
 COPY uwsgi.ini /uwsgi.ini
-# RUN pip freeze > newreqs.txt
 
 CMD ["uwsgi", "--ini", "/uwsgi.ini"]
