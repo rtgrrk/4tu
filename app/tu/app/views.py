@@ -1,6 +1,16 @@
 from django.views.generic import DetailView, ListView, UpdateView, CreateView
+from django.views.generic.base import TemplateView
 from .models import product, cart, order
 from .forms import productForm, cartForm, orderForm
+
+
+class HomeView(TemplateView):
+    template_name = "app/home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['product_list'] = product.objects.all()
+        return context
 
 
 class productListView(ListView):

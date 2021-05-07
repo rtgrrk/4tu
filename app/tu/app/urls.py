@@ -1,4 +1,4 @@
-from django.urls import path, include
+from django.urls import path, re_path, include
 from rest_framework import routers
 
 from . import api
@@ -13,6 +13,11 @@ router.register(r'order', api.orderViewSet)
 urlpatterns = (
     # urls for Django Rest Framework API
     path('api/', include(router.urls)),
+)
+
+urlpatterns += (
+    # urls for Django Rest Framework API
+    re_path(r'^$', views.HomeView.as_view(), name='home'),
 )
 
 urlpatterns += (

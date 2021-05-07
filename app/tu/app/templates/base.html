@@ -1,1 +1,20 @@
-<html><head></head><body>{% block content %}Replace this.{% endblock %}</body>
+{% load static %}<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'cart/css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container text-white">
+                <strong>4TU Shop</strong>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}Replace this.{% endblock %}
+    </main>
+</body>

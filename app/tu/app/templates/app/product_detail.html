@@ -1,17 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<p><a class="btn btn-default" href="{% url 'app_product_list' %}">product Listing</a></p>
-<table class="table">
-<tr><td>name</td><td>{{ object.name }}</td></tr>
-<tr><td>slug</td><td>{{ object.slug }}</td></tr>
-<tr><td>created</td><td>{{ object.created }}</td></tr>
-<tr><td>last_updated</td><td>{{ object.last_updated }}</td></tr>
-<tr><td>title</td><td>{{ object.title }}</td></tr>
-<tr><td>image</td><td>{{ object.image }}</td></tr>
-<tr><td>description</td><td>{{ object.description }}</td></tr>
-<tr><td>price</td><td>{{ object.price }}</td></tr>
-</table>
-<a class="btn btn-primary" href="{{object.get_update_url}}">Edit product</a>
-
+<p><a class="btn btn-default" href="{% url 'home' %}">back to home page</a></p>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img src="/media/{{object.image}}" alt="Card image cap">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ object.title }}</h5>
+                        <p class="card-text">{{object.description}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="text-muted">&euro;{{object.price}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
