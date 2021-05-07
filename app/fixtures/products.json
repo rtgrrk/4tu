@@ -1,0 +1,58 @@
+[
+{
+    "model": "app.product",
+    "pk": 1,
+    "fields": {
+        "name": "beaker",
+        "slug": "beaker",
+        "created": "2021-05-07T08:49:47.371Z",
+        "last_updated": "2021-05-07T09:03:06.346Z",
+        "title": "Beaker",
+        "image": "products/Beaker.jpg",
+        "description": "He is the shy, long-suffering assistant of Dr. Bunsen Honeydew",
+        "price": "10.05"
+    }
+},
+{
+    "model": "app.product",
+    "pk": 2,
+    "fields": {
+        "name": "miss_piggy",
+        "slug": "miss_piggy",
+        "created": "2021-05-07T09:04:38.389Z",
+        "last_updated": "2021-05-07T09:04:38.389Z",
+        "title": "Miss Piggy",
+        "image": "products/piggy.jpg",
+        "description": "Since her debut in 1976, Miss Piggy has been notable for her temperamental diva superstar personality, tendency to use French phrases in her speech, and practice of karate",
+        "price": "21.33"
+    }
+},
+{
+    "model": "app.product",
+    "pk": 3,
+    "fields": {
+        "name": "swedish-chef",
+        "slug": "swedish-chef",
+        "created": "2021-05-07T09:06:16.928Z",
+        "last_updated": "2021-05-07T09:06:16.928Z",
+        "title": "Swedish chef",
+        "image": "products/chef.jpg",
+        "description": "He is best known for his ridiculous cooking methods and the phrase \"Bork, bork, bork!\".",
+        "price": "9.99"
+    }
+},
+{
+    "model": "app.product",
+    "pk": 4,
+    "fields": {
+        "name": "kermit",
+        "slug": "kermit",
+        "created": "2021-05-07T09:06:57.599Z",
+        "last_updated": "2021-05-07T09:06:57.599Z",
+        "title": "Kermit",
+        "image": "products/kermit.jpg",
+        "description": "It's not easy being green",
+        "price": "32.00"
+    }
+}
+]
