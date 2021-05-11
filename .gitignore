@@ -7,7 +7,7 @@
 *.zip
 .idea
 var
-settings_local.py
+_settings_local.py
 /static/
 coachview/management/commands/test.py
 coachview_keys.txt
@@ -19,16 +19,4 @@ media/
 .project
 .pydevproject
 .settings/
-dump-prod-09-08-2016.sql
-website/conf/saml/
-.settings/org.eclipse.core.resources.prefs
-maintenancemode.inactive
-openlearn.dmp
-build/node_modules/
-celerybeat-schedule
-olw-backup-*.sql
-celerybeat.pid
-Opleiding.csv
-Opleidingssoort.csv
-
-
+db.sqlite3
